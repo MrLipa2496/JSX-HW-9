@@ -2,7 +2,7 @@ import React from 'react';
 import TodoItem from '../TodoItem';
 import styles from './TodoList.module.sass';
 
-const TodoList = ({ tasks, toggleTask, deleteTask }) => {
+const TodoList = ({ tasks, toggleTask, deleteTask, editTask }) => {
   return (
     <ul className={styles.todoList}>
       {tasks.map(task => (
@@ -11,6 +11,7 @@ const TodoList = ({ tasks, toggleTask, deleteTask }) => {
           task={task}
           toggleTask={toggleTask}
           deleteTask={deleteTask}
+          editTask={editTask}
         />
       ))}
     </ul>

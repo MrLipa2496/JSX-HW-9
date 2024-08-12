@@ -1,0 +1,83 @@
+$border-orange-color: #fe8a2b
+
+.todoApp
+    display: flex
+    flex-direction: column
+    padding: 16px
+    max-width: 500px
+    min-height: 600px
+    width: 100%
+    gap: 10px
+    position: relative
+    background-color: #fff
+    border-radius: 20px
+    box-shadow: 0 3px 5px rgb(0, 0,0, 0.3 )
+
+.appTitle 
+  font-weight: 1000
+  margin: 20px 0
+  font-size: 34px
+  background: linear-gradient(to bottom right, #3a7bd5 0%, #cc33ff 80%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  letter-spacing: 5px
+
+.inputWrapper
+    display: flex
+    justify-content: space-between
+    gap: 10px
+    
+.taskInput,
+.dateInput
+  padding: 10px
+  border-radius: 20px
+  border: 2px solid #fe8a2b
+  box-sizing: border-box
+  transition: border-color 0.3s ease
+  margin-bottom: 10px
+
+
+  &:focus
+    border-color: $border-orange-color
+    outline: none
+
+.taskInput
+  flex-grow: 1
+
+.dateInput
+  width: 40px
+  cursor: pointer
+
+.taskAddBtn
+    align-self: flex-start
+    padding: 11px
+    border-radius: 20px
+    width: 90px
+    background-color: #fe8a2b
+    color: white
+    font-weight: bold
+    font-size: 14px
+    border: none
+    position: absolute
+    right: 65px
+    top: 109px
+    cursor: pointer
+
+.filters
+    display: flex
+    justify-content: space-around
+    margin-top: auto
+
+.commonBtn
+    padding: 5px 20px
+    border-radius: 20px
+    font-family: 'Nunito', system-ui
+    font-weight: bold
+    color: gray
+    border: none
+    background-color: inherit
+    cursor: pointer
+
+.active
+    border: 2px solid $border-orange-color
+    color: $border-orange-color
