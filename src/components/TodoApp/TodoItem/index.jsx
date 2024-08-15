@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { IoTrashOutline } from 'react-icons/io5';
 import { FaEdit } from 'react-icons/fa';
-import styles from './TodoItem.module.sass';
 import classNames from 'classnames';
+import styles from './TodoItem.module.sass';
 
 const formatDate = dateString => {
   const date = new Date(dateString);

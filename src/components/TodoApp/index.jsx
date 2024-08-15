@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import classNames from 'classnames';
 import {
   addTask,
   toggleTask,
@@ -9,7 +10,6 @@ import {
 } from '../../store/slices/todoSlice';
 import TodoList from './TodoList';
 import styles from './TodoApp.module.sass';
-import classNames from 'classnames';
 
 const TodoApp = ({ tasks, addTask, toggleTask, deleteTask, editTask }) => {
   const [newTask, setNewTask] = useState('');
